@@ -47,7 +47,7 @@
 
     const otherBookHtml = otherBook ? `
       <a class="book-card" href="book-detail.html?id=${otherBook.id}" style="display:block">
-        <div class="book-cover-placeholder small">${otherBook.title}</div>
+        ${bookCoverHtml(otherBook, "small")}
         <h3 class="book-card-title">${otherBook.title}</h3>
         <p class="book-card-sub">${otherBook.subtitle}</p>
       </a>
@@ -65,7 +65,7 @@
 
     root.innerHTML = `
       <div class="book-detail-header">
-        <div class="book-cover-placeholder large">${book.title}</div>
+        ${bookCoverHtml(book, "large")}
         <div>
           <h1 class="book-detail-title">${book.title}</h1>
           <p class="book-detail-sub">${book.subtitle}</p>

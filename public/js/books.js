@@ -21,7 +21,7 @@
 
     container.innerHTML = `
       <div class="book-section-header">
-        <div class="book-cover-placeholder">${book.title}</div>
+        ${bookCoverHtml(book)}
         <div>
           <h2 class="book-section-title">${book.title}</h2>
           <p class="book-section-sub">${book.subtitle}</p>

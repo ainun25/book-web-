@@ -55,7 +55,7 @@
     }
     grid.innerHTML = BOOKS.map((book) => `
       <div class="book-card">
-        <div class="book-cover-placeholder small">${book.title}</div>
+        ${bookCoverHtml(book, "small")}
         <h3 class="book-card-title">${book.title}</h3>
         <p class="book-card-sub">${book.subtitle || ""}</p>
         <a class="btn btn-outline" href="book-detail.html?id=${book.id}">책 자세히 보기</a>
@@ -63,7 +63,14 @@
     `).join("");
   }
 
+  function renderHeroBooks() {
+    const wrap = document.getElementById("heroBooks");
+    if (!wrap || typeof BOOKS === "undefined") return;
+    wrap.innerHTML = BOOKS.map((book) => bookCoverHtml(book)).join("");
+  }
+
   document.addEventListener("DOMContentLoaded", () => {
+    renderHeroBooks();
     renderTopicGrid();
     renderFeatured();
     renderBooks();
