@@ -6,10 +6,13 @@
   function cardHtml(cn) {
     const book = BOOKS.find((b) => b.id === cn.bookId) || {};
     const topic = TOPICS.find((t) => t.id === cn.primaryTopic) || {};
-    const img = (cn.images && cn.images[0]) || "images/thumbnails/placeholder.jpg";
+    const img = cn.images && cn.images[0];
+    const thumbHtml = img
+      ? `<img class="cardnews-thumb" src="/${img}" alt="${cn.title}" />`
+      : `<div class="cardnews-thumb cardnews-thumb-text"><span>${cn.title}</span></div>`;
     return `
       <a class="cardnews-item" href="cardnews-detail.html?id=${cn.id}">
-        <div class="cardnews-thumb" style="background-image:url('${img}')"></div>
+        ${thumbHtml}
         <div class="cardnews-item-body">
           <h3 class="cardnews-item-title">${cn.title}</h3>
           <p class="cardnews-item-topic">${topic.title || ""}</p>
