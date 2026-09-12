@@ -712,10 +712,9 @@ main {
 .cardnews-detail-img {
   width: 100%;
   max-width: 500px;
-  height: 320px;
+  height: auto;
+  display: block;
   background-color: var(--color-primary-soft);
-  background-size: cover;
-  background-position: center;
   border-radius: 10px;
 }
 

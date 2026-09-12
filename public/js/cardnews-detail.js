@@ -18,7 +18,7 @@
     const book = BOOKS.find((b) => b.id === cn.bookId) || {};
 
     const imagesHtml = (cn.images || [])
-      .map((src) => `<div class="cardnews-detail-img" style="background-image:url('${src}')"></div>`)
+      .map((src) => `<img class="cardnews-detail-img" src="/${src}" alt="${cn.title}" />`)
       .join("");
 
     const relatedTopicContents = CONTENTS
