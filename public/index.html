@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>책에서 한 걸음 더</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div id="siteHeader"></div>
+
+  <main>
+    <!-- ① 메인 비주얼 -->
+    <section class="hero">
+      <div class="hero-text">
+        <h1 class="hero-title">책에서 시작해,<br />오늘의 나를 이해합니다.</h1>
+        <p class="hero-sub">사람과 역사 이야기를 통해 마음, 관계, 선택, 변화를 함께 생각해 보세요.</p>
+        <div class="hero-buttons">
+          <a class="btn btn-primary" href="topics.html">주제로 찾아보기</a>
+          <a class="btn btn-outline" href="books.html">책 둘러보기</a>
+        </div>
+      </div>
+      <div class="hero-books">
+        <div class="book-cover-placeholder">이럴 땐<br />이런 사람</div>
+        <div class="book-cover-placeholder">이럴 땐<br />이런 역사</div>
+      </div>
+    </section>
+
+    <!-- ② 주제로 찾아보기 -->
+    <section class="section">
+      <h2 class="section-title">주제로 찾아보기</h2>
+      <div class="topic-grid" id="topicGrid"></div>
+    </section>
+
+    <!-- ③ 사람으로 생각하기 / 역사로 생각하기 -->
+    <section class="section">
+      <div class="split-grid">
+        <div class="split-card">
+          <span class="split-label">사람으로 생각하기</span>
+          <h3 class="split-book-title">이럴 땐 이런 사람</h3>
+          <p class="split-desc">인물의 경험과 선택을 통해 내 마음과 삶을 생각합니다.</p>
+          <a class="btn btn-outline" href="books.html#people">사람 이야기 보기</a>
+        </div>
+        <div class="split-card">
+          <span class="split-label">역사로 생각하기</span>
+          <h3 class="split-book-title">이럴 땐 이런 역사</h3>
+          <p class="split-desc">역사 속 결정적 순간을 통해 오늘의 감정과 선택을 생각합니다.</p>
+          <a class="btn btn-outline" href="books.html#history">역사 이야기 보기</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ④ 오늘의 질문 -->
+    <section class="section">
+      <div class="question-banner">
+        <p class="question-text">"모두가 반대할 때,<br />나는 무엇을 기준으로 선택할까?"</p>
+        <div class="question-tags">#선택 #용기 #판단</div>
+        <a class="btn btn-primary" href="topics.html">관련 이야기 보기</a>
+      </div>
+    </section>
+
+    <!-- ⑤ 추천 콘텐츠 -->
+    <section class="section">
+      <h2 class="section-title">추천 콘텐츠</h2>
+      <div class="card-grid" id="featuredGrid"></div>
+    </section>
+
+    <!-- ⑥ 책에서 더 읽어보기 -->
+    <section class="section">
+      <h2 class="section-title">책에서 더 읽어보기</h2>
+      <div class="book-grid" id="bookGrid"></div>
+    </section>
+  </main>
+
+  <div id="siteFooter"></div>
+
+  <script src="/data/siteConfig.js"></script>
+  <script src="/data/topics.js"></script>
+  <script src="/data/books.js"></script>
+  <script src="/data/contents.js"></script>
+  <script src="js/layout.js"></script>
+  <script src="js/home.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

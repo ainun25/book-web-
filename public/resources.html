@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>자료실 - 책에서 한 걸음 더</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div id="siteHeader"></div>
+
+  <main>
+    <h1 class="page-title">자료실</h1>
+    <p class="page-desc">부모, 교사, 저자·기획자를 위한 자료를 제공합니다.</p>
+
+    <div class="filter-bar" id="categoryFilterBar">
+      <button class="filter-btn active" data-category="all">전체</button>
+      <button class="filter-btn" data-category="parent">부모용</button>
+      <button class="filter-btn" data-category="teacher">교사용</button>
+      <button class="filter-btn" data-category="author">저자·기획자용</button>
+    </div>
+
+    <div class="card-grid" id="resourceGrid"></div>
+  </main>
+
+  <div id="siteFooter"></div>
+
+  <script src="/data/siteConfig.js"></script>
+  <script src="/data/topics.js"></script>
+  <script src="/data/books.js"></script>
+  <script src="/data/resources.js"></script>
+  <script src="js/layout.js"></script>
+  <script src="js/resources.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
