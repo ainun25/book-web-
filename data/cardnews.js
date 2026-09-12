@@ -46,13 +46,21 @@ const CARDNEWS = [
   },
   {
     id: "great-depression-card",
-    title: "대공황",
+    title: "내일은 괜찮을까?",
     relatedContentId: "history-great-depression",
     bookId: "history",
     primaryTopic: "change",
     relatedTopics: ["challenge", "emotion"],
-    images: ["images/cardnews/great-depression-1.jpg"],
-    summary: "모든 것이 무너진 것 같던 시기, 사람들은 어떻게 다시 일어섰을까요?",
+    images: [
+      "images/cardnews/great-d1.png",
+      "images/cardnews/great-d2.png",
+      "images/cardnews/great-d3.png",
+      "images/cardnews/great-d4.png",
+      "images/cardnews/great-d5.png",
+      "images/cardnews/great-d6.png",
+      "images/cardnews/great-d7.png"
+    ],
+    summary: "무너진 일상, 사라진 내일 앞에서 사람들은 어떻게 다시 일어섰을까요?",
     question: "큰 변화 앞에서 내가 지킬 수 있는 것은 무엇일까?"
   },
   {
